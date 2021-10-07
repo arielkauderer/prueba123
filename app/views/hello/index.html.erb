@@ -1,0 +1,7 @@
+<h1>Bienvenido a Oneclass</h1>
+
+<p><%= link_to 'Cursos', courses_index_path %></p>
+<p><%= link_to 'Clases', class_videos_index_path %></p>
+<% if current_user %>
+    <%= link_to 'Ver perfil', users_show_path(current_user.id) %>
+<% end %>

@@ -1,0 +1,26 @@
+<h1>Clases#edit</h1>
+<%= form_with(model: @class_video, method: :patch, url: class_videos_update_path(:id => @class_video.id)) do |form| %>
+
+    <div>
+        <%= form.label :Nombre %>
+        <%= form.text_field :name %>
+    </div>
+
+
+    <div>
+        <%= form.label :Descripción %>
+        <%= form.text_field :description %>
+    </div>
+
+
+    <div>
+        <%= form.label :Id_curso %>
+        <%= form.text_field :course_id %>
+    </div>
+
+    <div>
+        <%= form.submit 'Editar clase' %>
+    </div>
+
+<% end %>
+<%= link_to 'Atrás', courses_show_path(:id => @class_video.id) %>

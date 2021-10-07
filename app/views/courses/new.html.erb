@@ -1,0 +1,26 @@
+<h1>Courses#new</h1>
+
+<%= form_with(model: @course, method: :post) do |form| %>
+
+    <div>
+        <%= form.label :Nombre %>
+        <%= form.text_field :name %>
+    </div>
+
+
+    <div>
+        <%= form.label :Descripción%>
+        <%= form.text_field :description %>
+    </div>
+
+    <div>
+        <%= form.label :Categoría%>
+        <%= form.text_field :category %>
+    </div>
+
+    <div>
+        <%= form.submit 'Crear curso' %>
+    </div>
+
+<% end %>
+

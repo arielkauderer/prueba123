@@ -1,0 +1,25 @@
+<h1>Clases#new</h1>
+
+<%= form_with(model: @class_video, method: :post) do |form| %>
+
+    <div>
+        <%= form.label :Nombre %>
+        <%= form.text_field :name %>
+    </div>
+
+
+    <div>
+        <%= form.label :Descripción %>
+        <%= form.text_field :description %>
+    </div>
+
+    <div>
+        <%= form.label :ID_Curso %>
+        <%= form.text_field :course_id %>
+    </div>
+
+    <div>
+        <%= form.submit 'Crear clase' %>
+    </div>
+
+<% end %>

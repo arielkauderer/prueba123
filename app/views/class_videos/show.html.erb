@@ -1,0 +1,23 @@
+<h1>Clases#show</h1>
+<h1>
+    <%= @class_video.name %>
+</h1>
+
+
+<p>
+    <strong>Description: </strong>
+    <%= @class_video.description %>
+</p>
+
+
+<p>
+    <strong>ID_Curso: </strong>
+    <%= @class_video.course_id %>
+</p>
+
+<%= link_to 'Crear clase', class_videos_new_path %>
+
+<%= link_to 'Volver', class_videos_index_path %>
+<%= link_to 'Editar clase', class_videos_edit_path(:id => @class_video.id) %>
+<%= link_to 'Eliminar clase', class_videos_delete_path(:id => @class_video.id), method: :delete %>
+
